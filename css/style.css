@@ -1,0 +1,274 @@
+/* fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* common css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a,
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+
+.container {
+  width: 118rem;
+}
+
+/* header part css start  */
+
+header {
+  background: #5352ed;
+  height: 64rem;
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 6rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 8rem;
+  color: #fff;
+  margin: 14rem 0;
+}
+
+.btn-watch {
+  background-color: #e02c6d;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.btn-watch i {
+  transition: transform 1s linear,padding-right 1s linear;
+  -webkit-transition: transform 1s linear,padding-right 1s linear;
+  -moz-transition: transform 1s linear,padding-right 1s linear;
+  -ms-transition: transform 1s linear,padding-right 1s linear;
+  -o-transition: transform 1s linear,padding-right 1s linear;
+}
+
+#home:hover i{
+  padding-right: 4rem;
+  transform: translateX(6rem);
+  -webkit-transform: translateX(6rem);
+  -moz-transform: translateX(6rem);
+  -ms-transform: translateX(6rem);
+  -o-transform: translateX(6rem);
+}
+
+.banner img {
+  height: 46rem;
+  width: 56rem;
+  margin-top: 8rem;
+  
+}
+
+/* players css  */
+
+#football-heroes {
+  margin: 3rem 0;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1rem;
+  margin: 0 auto;
+}
+
+.player {
+  height: 48rem;
+  width: 35rem;
+  margin-top: 2rem;
+  padding: 2.5rem;
+  box-shadow: 0.5rem 0.5rem 2rem 0.2rem gray;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.profile img {
+  height: 26rem;
+  width: 30rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.info {
+  color: #6c6c6c;
+}
+
+/* membership css  */
+
+#membership {
+  background-color: #1a0327;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+#membership h2 {
+  font-size: 4rem;
+  color: whitesmoke;
+}
+
+#membership label {
+  font-size: 2.4rem;
+}
+
+#membership input {
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#membership button {
+  height: 3rem;
+  width: 10rem;
+  background-color: #525a69;
+  margin-top: 2rem;
+  border: 0;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+#membership button a {
+  font-size: 2rem;
+}
+
+/* footer css */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+footer img {
+  height: 11rem;
+  width: 48rem;
+}
+
+.social-link {
+  padding: 2rem 0;
+}
+
+.social-link .fab {
+  color: #e02c6d;
+  font-size: 3rem;
+  /* padding: 1rem; */
+}
+
+footer p {
+  font-size: 2rem;
+}
+
+.back-top {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: #f199b9;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  right: 6rem;
+  bottom: 6rem;
+  position: fixed;
+}
+/* responsive css  */
+
+@media only screen and (max-width:48rem) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    height: auto;
+  }
+  
+  #home {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .title {
+    font-size: 4.2rem;
+    margin: 1rem;
+  }
+  
+  .banner img {
+    height: 46rem;
+    width: 38rem;
+    padding: 1rem;
+  }
+
+  .players {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 2rem;
+  }
+
+  #membership {
+    width: 46rem;
+  }
+
+  footer img {
+    height: 8rem;
+    width: 36rem;
+  }
+}
+
+
+
